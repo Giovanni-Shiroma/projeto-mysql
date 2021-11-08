@@ -29,7 +29,7 @@ create table transaçao (
 id int not null auto_increment PRIMARY KEY,
 id_usuario int not null, 
 id_cartao int not null,
-valor decimal,
+valor decimal(10,2),
 data_cadastro date
 );
 

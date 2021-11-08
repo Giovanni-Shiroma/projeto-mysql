@@ -5,7 +5,7 @@ create database atividade_2;
 use atividade_2;
 
 -- criando a tabela de buscas 
-create table serach_page(
+create table search_page(
    id int not null auto_increment primary key,
    squad int NOT NULL,
    hashtag varchar(140) NOT NULL,
@@ -14,7 +14,7 @@ create table serach_page(
 );
 
 -- inserindo dados na tabela criada 
-insert into serch_page (squad, hashtag, data_hashtag, hora_hashtag) 
+insert into search_page (squad, hashtag, data_hashtag, hora_hashtag) 
 values
 ('2','carros','2021-02-20','19:00'),
 ('2','surf','2021-04-12','20:30'),
@@ -27,7 +27,7 @@ set hashtag = 'insira o nome que desejar'
 where id_squad = 'insira o id da linha que vai ser alterada';
 
 -- query para mostrar dados da tabela de buscas por ordem de data
-select * from serch_page order by data_hashtag asc;
+select * from search_page order by data_hashtag asc;
 
 -- query para deletar algum dado da tabela 
 delete from search_page where id= ('numero do id que vai ser deletado');
